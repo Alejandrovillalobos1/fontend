@@ -1,0 +1,37 @@
+header{
+    text-align: center;
+}
+
+.menu{
+    position:relative;
+    overflow: auto;
+}
+
+li {
+    width: 14.5%;
+    float: left;
+    list-style-type: none;
+    background-color: #00f;
+    text-decoration: none;
+    margin: 4px;
+    padding: 6px;
+}
+
+li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#titulo{
+    color: #037bc0;
+}
+
+.productos{
+    text-align: center;
+}
+
+.contenido{
+    padding: 5%;
+}
+
