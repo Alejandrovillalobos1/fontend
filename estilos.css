@@ -7,7 +7,7 @@ header{
     overflow: auto;
 }
 
-li {
+.lista1 {
     width: 14.5%;
     float: left;
     list-style-type: none;
@@ -33,5 +33,9 @@ li a{
 
 .contenido{
     padding: 5%;
+}
+
+.categorias{
+    text-align: center;
 }
 
