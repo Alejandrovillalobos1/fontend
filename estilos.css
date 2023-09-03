@@ -1,10 +1,25 @@
+*{
+    font-size: 62.5;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 4rem;
+}
+
 header{
     text-align: center;
 }
 
 .menu{
-    position:relative;
-    overflow: auto;
+   display: flexbox;
 }
 
 .lista1 {
@@ -29,6 +44,7 @@ li a{
 
 .productos{
     text-align: center;
+    
 }
 
 .contenido{
@@ -200,7 +216,7 @@ li a{
     font-weight: 500;
     border-bottom: 2px solid #00c3ff;
     padding-bottom: 5px;
-    display: inline-block
+    display: flexbox;
 }
 
 
