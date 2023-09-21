@@ -1,229 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
+    font-size: 12.5px;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
     font-family: 'Raleway', sans-serif;
-    font-size: 62.5;
-    line-height: 2;
+    font-weight: 300;
+    line-height: 2
 }
 
-h1{
+h1 {
     font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 4rem;
 }
 
-header{
-    text-align: center;
-}
-
-.menu{
-   display: flex;
-}
-
-.lista1 {
-    width: 14.5%;
-    float: left;
-    list-style-type: none;
-    background-color: #00f;
-    text-decoration: none;
-    margin: 4px;
-    padding: 6px;
-}
-
-li a{
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-}
-
-#base{
-    font-family: 'Playfair', sans-serif;
-}
-
-#titulo{
-    color: #037bc0;
-}
-
-.productos{
-    text-align: center;
-    
-}
-
-.contenido{
-    padding: 5%;
-}
-
-.principal{
-    width: 100%;
-    height: 100%;
-}
-
-.principal img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.categorias{
-    text-align: center;
-}
-
-.product-lg{
-    height: 350px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.product-lg-img{
-    width: 70%;
-    height: auto;
-}
-
-.product-lg-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.product-lg-cnt{
-    width: 30%;
-    height: auto;
-    background-color: #00f;
-    text-align: center;
-    color: #fff;
-}
-
-.product-sm{
-    width: 49.4%;
-    height: 450px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-    display: inline-block;
-    margin-bottom: 50px;
-    contain: content;
-}
-
-.product-sm-img{
-    width: auto;
-    height: 270px;
-}
-
-.product-sm-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-
-.product-sm-cnt{
-    width: 100%;
-    height: 180px;
-    background-color: #00f;
-    text-align: center;
-    color: #fff;
-}
-
-.product-smmm{
-    width: 32.6%;
-    height: 470px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-    display: inline-block;
-    contain: content;
-}
-
-.product-smmm-img{
-    width: auto;
-    height: 300px;
-}
-
-.product-smmm-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.product-smmm-cnt{
-    width: 100%;
-    height: 1700px;
-    background-color: #00f;
-    text-align: center;
-    color: #fff;
-    border-color: #00f;
-    border-style: groove;
-    border-width: 1px;
-}
-
-.categorias-productos{
-    width: 90%;
-    height: 350px;
-    display: inline-block;
-    padding: 5%;
-
-}
-
-.categorias-sm{
-    width: 33%;
-    display: inline-block;
-    
-}
-
-.categorias-sm-img{
-    width: auto;
-    height: auto;
-}
-
-.categorias-sm-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.categorias-sm-cnt{
-    width: auto;
-    height: 50px;
-    text-align: center;
-    color: #000;
-}
-
-.conteiner{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer{
-    background-color: #24262b;
-    padding: 80px 0;
-}
-
-.footer-row{
+.herocontainer{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-links{
-    width: 25%;
-    padding: 0 15px;
+.hero-image {
+    /* flex: 1 0 100vw; */
+    height: 60vw;
+    background-image: url("imagenes/principal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  .hero-text {
+    flex: 1 0 100%;
+    margin-top: 5vw;
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .navflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.footer-links h4{
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 10px;
-    font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
-    padding-bottom: 5px;
-    display: flexbox;
+.fuente1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
+.contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 92%;
+    margin: 0% 4% 0% 4%;
+}
+
+.foto1{
+    display: flex;
+    max-width: 60%;
+}
+.foto1 img{
+    border-radius: 6px 0px 0px 6px;
+}
+
+.texto1{
+    flex: 1 0 40%;
+    background-color: rgb(76, 121, 163);
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px
+    
+}
+
+.contenedor1 .texto1{
+    border-radius: 0px 5px 5px 0px;
+}
+.textocatego{
+    text-align: center;
+    padding: 10px;
+    color: rgb(76, 121, 163);
+}
+
+.grid1{
+    display: grid;
+    width: 92%;
+    margin: 0% 4% 0% 4%;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 10px;
+
+}
+.grid2{
+    display: grid;
+    width: 92%;
+    margin: 0% 4% 0% 4%;
+    grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+    gap: 10px;
+    
+}
+
+.contenedornav {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#navfinal{
+    display: flex;
+    max-width: 96%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#ulfinal{
+    list-style-type: none;
+    text-align: center;
+}
+
+.botones a:link{
+    text-decoration: none;
+    color: gray;
+}
+.botones a:visited{
+    color: gray;
+}
+
+.botones a:hover{
+    color: gainsboro;
+    transition: 0.3s;
+}
+.botones h3{
+    color: rgb(76, 121, 163);
+}
+.lsfooter{
+    flex: 1 0 14rem;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width:850px) {
+    .contenedor1{
+    flex-direction: column;
+}
+.foto1{
+    max-width: 100%;
+}
+.foto1 img{
+    border-radius: 5px 5px 0px 0px;
+}
+.contenedor1 .texto1{
+    border-radius: 0px 0px 5px 5px;
+}
+}
 
 
